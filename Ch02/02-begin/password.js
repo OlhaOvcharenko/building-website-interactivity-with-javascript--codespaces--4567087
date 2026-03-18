@@ -9,10 +9,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
     if (fldPassword.type === 'text') {
       fldPassword.type = 'password';
-      btnReveal.innerText = 'Show Password';
+      btnReveal.innerText = btnReveal.dataset.labelShow;
     } else if (fldPassword.type === 'password') {
       fldPassword.type = 'text';
-      btnReveal.innerText = 'Hide Password';
+      btnReveal.innerText = btnReveal.dataset.labelHide;
     }
   });
 });
